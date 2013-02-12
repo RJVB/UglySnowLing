@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		D65524A716C9A81400E5C932 /* NSRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524A516C9A81400E5C932 /* NSRegularExpression.m */; };
+		D65524A816C9A81400E5C932 /* NSRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A616C9A81400E5C932 /* NSRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65524AC16C9A82400E5C932 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A916C9A82400E5C932 /* common.h */; settings = {ATTRIBUTES = (); }; };
+		D65524AE16C9A82400E5C932 /* GSBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524AB16C9A82400E5C932 /* GSBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65524C016C9AA0400E5C932 /* GSICUString.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524BE16C9AA0400E5C932 /* GSICUString.m */; };
+		D65524C116C9AA0400E5C932 /* GSICUString.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524BF16C9AA0400E5C932 /* GSICUString.h */; settings = {ATTRIBUTES = (); }; };
+		D655262916C9BC2700E5C932 /* NSTextCheckingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D655262816C9BC2700E5C932 /* NSTextCheckingResult.h */; settings = {ATTRIBUTES = (); }; };
+		D655262A16C9BC8600E5C932 /* NSTextCheckingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524DB16C9AB4500E5C932 /* NSTextCheckingResult.m */; };
+		D655267116C9C0C000E5C932 /* libicuuc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267016C9C0C000E5C932 /* libicuuc.dylib */; };
+		D655267316C9C0C000E5C932 /* libicui18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267216C9C0C000E5C932 /* libicui18n.dylib */; };
+		D655267516C9C0C000E5C932 /* libicudata.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267416C9C0C000E5C932 /* libicudata.dylib */; };
+		D655288516C9C11F00E5C932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D655288416C9C11F00E5C932 /* Foundation.framework */; };
+		D659DD1516CA569A00B9A61B /* README.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D659DD1416CA569A00B9A61B /* README.txt */; };
+		D659DD1916CA581200B9A61B /* README-GNUStep-Base.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D659DD1816CA581200B9A61B /* README-GNUStep-Base.txt */; };
+		D659DD4516CA59EF00B9A61B /* testNSRegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = D659DD4416CA59EF00B9A61B /* testNSRegEx.m */; };
+		D659DD4816CA5A3400B9A61B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D655288416C9C11F00E5C932 /* Foundation.framework */; };
+		D659DD5E16CA5B1200B9A61B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D659DD5D16CA5B1200B9A61B /* AppKit.framework */; };
+		D659DF4216CA986C00B9A61B /* NSRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A616C9A81400E5C932 /* NSRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D659DF4316CA986C00B9A61B /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A916C9A82400E5C932 /* common.h */; settings = {ATTRIBUTES = (); }; };
+		D659DF4416CA986C00B9A61B /* GSBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524AB16C9A82400E5C932 /* GSBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D659DF4516CA986C00B9A61B /* GSICUString.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524BF16C9AA0400E5C932 /* GSICUString.h */; settings = {ATTRIBUTES = (); }; };
+		D659DF4616CA986C00B9A61B /* NSTextCheckingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D655262816C9BC2700E5C932 /* NSTextCheckingResult.h */; settings = {ATTRIBUTES = (); }; };
+		D659DF4816CA986C00B9A61B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		D659DF4A16CA986C00B9A61B /* NSRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524A516C9A81400E5C932 /* NSRegularExpression.m */; };
+		D659DF4B16CA986C00B9A61B /* GSICUString.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524BE16C9AA0400E5C932 /* GSICUString.m */; };
+		D659DF4C16CA986C00B9A61B /* NSTextCheckingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524DB16C9AB4500E5C932 /* NSTextCheckingResult.m */; };
+		D659DF4E16CA986C00B9A61B /* libicuuc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267016C9C0C000E5C932 /* libicuuc.dylib */; };
+		D659DF4F16CA986C00B9A61B /* libicui18n.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267216C9C0C000E5C932 /* libicui18n.dylib */; };
+		D659DF5016CA986C00B9A61B /* libicudata.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D655267416C9C0C000E5C932 /* libicudata.dylib */; };
+		D659DF5116CA986C00B9A61B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D655288416C9C11F00E5C932 /* Foundation.framework */; };
+		D659DF5316CA986C00B9A61B /* README-GNUStep-Base.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D659DD1816CA581200B9A61B /* README-GNUStep-Base.txt */; };
+		D659DF5416CA986C00B9A61B /* README.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = D659DD1416CA569A00B9A61B /* README.txt */; };
+		D659DFEA16CA9AD300B9A61B /* UglySnowLingEmb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D659DF5816CA986C00B9A61B /* UglySnowLingEmb.framework */; };
+		D659E00016CA9B7500B9A61B /* UglySnowLingEmb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D659DF5816CA986C00B9A61B /* UglySnowLingEmb.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D659DFE816CA9ACD00B9A61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D659DF4016CA986C00B9A61B /* UglySnowLingEmb */;
+			remoteInfo = UglySnowLingEmb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D659DD3116CA58F100B9A61B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				D659DD1916CA581200B9A61B /* README-GNUStep-Base.txt in CopyFiles */,
+				D659DD1516CA569A00B9A61B /* README.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DF5216CA986C00B9A61B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				D659DF5316CA986C00B9A61B /* README-GNUStep-Base.txt in CopyFiles */,
+				D659DF5416CA986C00B9A61B /* README.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659E00716CA9B7900B9A61B /* Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D659E00016CA9B7500B9A61B /* UglySnowLingEmb.framework in Frameworks */,
+			);
+			name = Frameworks;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* UglySnowLing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UglySnowLing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65524A516C9A81400E5C932 /* NSRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRegularExpression.m; sourceTree = "<group>"; };
+		D65524A616C9A81400E5C932 /* NSRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRegularExpression.h; sourceTree = "<group>"; };
+		D65524A916C9A82400E5C932 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		D65524AB16C9A82400E5C932 /* GSBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBlocks.h; sourceTree = "<group>"; };
+		D65524BE16C9AA0400E5C932 /* GSICUString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSICUString.m; sourceTree = "<group>"; };
+		D65524BF16C9AA0400E5C932 /* GSICUString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSICUString.h; sourceTree = "<group>"; };
+		D65524DB16C9AB4500E5C932 /* NSTextCheckingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextCheckingResult.m; sourceTree = "<group>"; };
+		D655262816C9BC2700E5C932 /* NSTextCheckingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextCheckingResult.h; sourceTree = "<group>"; };
+		D655267016C9C0C000E5C932 /* libicuuc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.dylib; path = /Volumes/Debian/MacPorts/lib/libicuuc.dylib; sourceTree = "<absolute>"; };
+		D655267216C9C0C000E5C932 /* libicui18n.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicui18n.dylib; path = /Volumes/Debian/MacPorts/lib/libicui18n.dylib; sourceTree = "<absolute>"; };
+		D655267416C9C0C000E5C932 /* libicudata.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.dylib; path = /Volumes/Debian/MacPorts/lib/libicudata.dylib; sourceTree = "<absolute>"; };
+		D655288416C9C11F00E5C932 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D659DD1416CA569A00B9A61B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D659DD1816CA581200B9A61B /* README-GNUStep-Base.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GNUStep-Base.txt"; sourceTree = "<group>"; };
+		D659DD3916CA598200B9A61B /* testNSRegEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testNSRegEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D659DD3B16CA598200B9A61B /* testNSRegEx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testNSRegEx-Info.plist"; sourceTree = "<group>"; };
+		D659DD4416CA59EF00B9A61B /* testNSRegEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testNSRegEx.m; path = Tests/testNSRegEx.m; sourceTree = "<group>"; };
+		D659DD5D16CA5B1200B9A61B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D659DF5816CA986C00B9A61B /* UglySnowLingEmb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UglySnowLingEmb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D659DF5B16CA986C00B9A61B /* InfoEmb.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = InfoEmb.plist; path = Resources/InfoEmb.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D655267116C9C0C000E5C932 /* libicuuc.dylib in Frameworks */,
+				D655267316C9C0C000E5C932 /* libicui18n.dylib in Frameworks */,
+				D655267516C9C0C000E5C932 /* libicudata.dylib in Frameworks */,
+				D655288516C9C11F00E5C932 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DD3716CA598200B9A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DD4816CA5A3400B9A61B /* Foundation.framework in Frameworks */,
+				D659DD5E16CA5B1200B9A61B /* AppKit.framework in Frameworks */,
+				D659DFEA16CA9AD300B9A61B /* UglySnowLingEmb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DF4D16CA986C00B9A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DF4E16CA986C00B9A61B /* libicuuc.dylib in Frameworks */,
+				D659DF4F16CA986C00B9A61B /* libicui18n.dylib in Frameworks */,
+				D659DF5016CA986C00B9A61B /* libicudata.dylib in Frameworks */,
+				D659DF5116CA986C00B9A61B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* UglySnowLing.framework */,
+				D659DD3916CA598200B9A61B /* testNSRegEx.app */,
+				D659DF5816CA986C00B9A61B /* UglySnowLingEmb.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* NSRegularExpression */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				D659DD3416CA592700B9A61B /* Tests */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = NSRegularExpression;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D659DD5D16CA5B1200B9A61B /* AppKit.framework */,
+				D655288416C9C11F00E5C932 /* Foundation.framework */,
+				D655267016C9C0C000E5C932 /* libicuuc.dylib */,
+				D655267216C9C0C000E5C932 /* libicui18n.dylib */,
+				D655267416C9C0C000E5C932 /* libicudata.dylib */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D659DD1C16CA581B00B9A61B /* Docs,Licenses,&c */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				D659DF5B16CA986C00B9A61B /* InfoEmb.plist */,
+				D659DD3B16CA598200B9A61B /* testNSRegEx-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D655262816C9BC2700E5C932 /* NSTextCheckingResult.h */,
+				D65524DB16C9AB4500E5C932 /* NSTextCheckingResult.m */,
+				D65524A616C9A81400E5C932 /* NSRegularExpression.h */,
+				D65524A516C9A81400E5C932 /* NSRegularExpression.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D65524A916C9A82400E5C932 /* common.h */,
+				D65524AB16C9A82400E5C932 /* GSBlocks.h */,
+				D65524BF16C9AA0400E5C932 /* GSICUString.h */,
+				D65524BE16C9AA0400E5C932 /* GSICUString.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D659DD1C16CA581B00B9A61B /* Docs,Licenses,&c */ = {
+			isa = PBXGroup;
+			children = (
+				D659DD1416CA569A00B9A61B /* README.txt */,
+				D659DD1816CA581200B9A61B /* README-GNUStep-Base.txt */,
+			);
+			name = "Docs,Licenses,&c";
+			sourceTree = "<group>";
+		};
+		D659DD3416CA592700B9A61B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D659DD4416CA59EF00B9A61B /* testNSRegEx.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65524A816C9A81400E5C932 /* NSRegularExpression.h in Headers */,
+				D65524AC16C9A82400E5C932 /* common.h in Headers */,
+				D65524AE16C9A82400E5C932 /* GSBlocks.h in Headers */,
+				D65524C116C9AA0400E5C932 /* GSICUString.h in Headers */,
+				D655262916C9BC2700E5C932 /* NSTextCheckingResult.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DF4116CA986C00B9A61B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DF4216CA986C00B9A61B /* NSRegularExpression.h in Headers */,
+				D659DF4316CA986C00B9A61B /* common.h in Headers */,
+				D659DF4416CA986C00B9A61B /* GSBlocks.h in Headers */,
+				D659DF4516CA986C00B9A61B /* GSICUString.h in Headers */,
+				D659DF4616CA986C00B9A61B /* NSTextCheckingResult.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* UglySnowLing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "UglySnowLing" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				D659DD3116CA58F100B9A61B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UglySnowLing;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = NSRegularExpression;
+			productReference = 8DC2EF5B0486A6940098B216 /* UglySnowLing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D659DD3816CA598200B9A61B /* testNSRegEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D659DD3E16CA598300B9A61B /* Build configuration list for PBXNativeTarget "testNSRegEx" */;
+			buildPhases = (
+				D659DD3516CA598200B9A61B /* Resources */,
+				D659DD3616CA598200B9A61B /* Sources */,
+				D659DD3716CA598200B9A61B /* Frameworks */,
+				D659E00716CA9B7900B9A61B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D659DFE916CA9ACD00B9A61B /* PBXTargetDependency */,
+			);
+			name = testNSRegEx;
+			productName = testNSRegEx;
+			productReference = D659DD3916CA598200B9A61B /* testNSRegEx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D659DF4016CA986C00B9A61B /* UglySnowLingEmb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D659DF5516CA986C00B9A61B /* Build configuration list for PBXNativeTarget "UglySnowLingEmb" */;
+			buildPhases = (
+				D659DF4116CA986C00B9A61B /* Headers */,
+				D659DF4716CA986C00B9A61B /* Resources */,
+				D659DF4916CA986C00B9A61B /* Sources */,
+				D659DF4D16CA986C00B9A61B /* Frameworks */,
+				D659DF5216CA986C00B9A61B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UglySnowLingEmb;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = NSRegularExpression;
+			productReference = D659DF5816CA986C00B9A61B /* UglySnowLingEmb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "UglySnowLing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* NSRegularExpression */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* UglySnowLing */,
+				D659DF4016CA986C00B9A61B /* UglySnowLingEmb */,
+				D659DD3816CA598200B9A61B /* testNSRegEx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DD3516CA598200B9A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DF4716CA986C00B9A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DF4816CA986C00B9A61B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65524A716C9A81400E5C932 /* NSRegularExpression.m in Sources */,
+				D65524C016C9AA0400E5C932 /* GSICUString.m in Sources */,
+				D655262A16C9BC8600E5C932 /* NSTextCheckingResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DD3616CA598200B9A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DD4516CA59EF00B9A61B /* testNSRegEx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D659DF4916CA986C00B9A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D659DF4A16CA986C00B9A61B /* NSRegularExpression.m in Sources */,
+				D659DF4B16CA986C00B9A61B /* GSICUString.m in Sources */,
+				D659DF4C16CA986C00B9A61B /* NSTextCheckingResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D659DFE916CA9ACD00B9A61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D659DF4016CA986C00B9A61B /* UglySnowLingEmb */;
+			targetProxy = D659DFE816CA9ACD00B9A61B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Frameworks;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../MacPorts/lib\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = UglySnowLing;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DEBUGGING_SYMBOLS = used;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Frameworks;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = UglySnowLing;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D659DD3C16CA598300B9A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "testNSRegEx-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = testNSRegEx;
+			};
+			name = Debug;
+		};
+		D659DD3D16CA598300B9A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "testNSRegEx-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = testNSRegEx;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D659DF5616CA986C00B9A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "Resources/Info copy.plist";
+				INSTALL_PATH = /Library/Frameworks;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../../../../../MacPorts/lib\\\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = UglySnowLing;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D659DF5716CA986C00B9A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DEBUGGING_SYMBOLS = used;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = Resources/InfoEmb.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = UglySnowLingEmb;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "UglySnowLing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "UglySnowLing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D659DD3E16CA598300B9A61B /* Build configuration list for PBXNativeTarget "testNSRegEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D659DD3C16CA598300B9A61B /* Debug */,
+				D659DD3D16CA598300B9A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D659DF5516CA986C00B9A61B /* Build configuration list for PBXNativeTarget "UglySnowLingEmb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D659DF5616CA986C00B9A61B /* Debug */,
+				D659DF5716CA986C00B9A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

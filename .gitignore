@@ -1,0 +1,7 @@
+bertin.mode1v3
+build/Release/testNSRegEx.app
+build/Release/testNSRegEx.app.dSYM
+build/Release/UglySnowLing.framework.dSYM
+build/Debug
+build/Release/UglySnowLingEmb.framework.dSYM
+build/UglySnowLing.build
