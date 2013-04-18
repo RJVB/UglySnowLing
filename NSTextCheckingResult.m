@@ -41,7 +41,7 @@
 }
 @end
 
-@implementation NSTextCheckingResult (GNUStep)
+@implementation NSTextCheckingResult (NSTextCheckingTypeRegularExpression)
 + (NSTextCheckingResult*) regularExpressionCheckingResultWithRanges: (NSRangePointer)ranges
 												  count: (NSUInteger)count
 										regularExpression: (NSRegularExpression*)regularExpression

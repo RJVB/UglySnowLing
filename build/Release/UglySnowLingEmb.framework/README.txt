@@ -3,3 +3,7 @@ UglySnowLing, short for the Ugly Snow Leopardling is a framework that aims to ad
 version of the OS to Mac OS X 10.6 a.k.a. Snow Leopard.
 For this it gathers open source implementations of said functionality from various projects.
 The initial version adds NSRegularExpression, ported from the GNUStep project.
+
+Used by my backport of the NSLogger facility:
+http://bitbucket.org/RJVB/nslogger
+

@@ -28,6 +28,7 @@ int main( int argc, char *argv[] )
 	   }
 	   else{
 		NSArray* chunks = [regexp matchesInString:string options:0 range:NSMakeRange(0, [string length])];
+		   NSLog( @"Checking regex %@", regexp );
 		   if( chunks ){
 			   NSLog( @"regex{'%@'[%@]} = %@", string, pattern, chunks );
 		   }

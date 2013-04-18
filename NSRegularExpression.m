@@ -91,6 +91,8 @@ NSRegularExpressionOptionsToURegexpFlags(NSRegularExpressionOptions opts)
 	return flags;
 }
 
+#ifdef NSRegularExpressionWorks
+
 @implementation NSRegularExpression
 
 + (NSRegularExpression*) regularExpressionWithPattern: (NSString*)aPattern
@@ -102,6 +104,10 @@ NSRegularExpressionOptionsToURegexpFlags(NSRegularExpressionOptions opts)
 							  error: e] autorelease];
 }
 
+- (NSString*) description
+{
+	return [[NSString alloc] initWithFormat:@"<NSRegularExpression: %p '%@'>", self, [self pattern]];
+}
 
 #if HAVE_UREGEX_OPENUTEXT
 - (id) initWithPattern: (NSString*)aPattern
@@ -113,12 +119,12 @@ NSRegularExpressionOptionsToURegexpFlags(NSRegularExpressionOptions opts)
 	UParseError	pe = {0};
 	UErrorCode	s = 0;
 	
-#if !__has_feature(blocks)
+#	if !__has_feature(blocks)
 	if ([self class] != [NSRegularExpression class])
 	{
 		NSLog(@"Warning: NSRegularExpression was built by a compiler without blocks support.  NSRegularExpression will deviate from the documented behaviour when subclassing and any code that subclasses NSRegularExpression may break in unexpected ways.  If you must subclass NSRegularExpression, you are strongly recommended to use a compiler with blocks support.");
 	}
-#endif
+#	endif
 	
 	UTextInitWithNSString(&p, aPattern);
 	regex = uregex_openUText(&p, flags, &pe, &s);
@@ -159,12 +165,12 @@ NSRegularExpressionOptionsToURegexpFlags(NSRegularExpressionOptions opts)
 	UErrorCode	s = 0;
 	TEMP_BUFFER(buffer, length);
 	
-#if !__has_feature(blocks)
+#	if !__has_feature(blocks)
 	if ([self class] != [NSRegularExpression class])
 	{
 		NSLog(@"Warning: NSRegularExpression was built by a compiler without blocks support.  NSRegularExpression will deviate from the documented behaviour when subclassing and any code that subclasses NSRegularExpression may break in unexpected ways.  If you must subclass NSRegularExpression, you are strongly recommended to use a compiler with blocks support.");
 	}
-#endif
+#	endif
 	
 	[aPattern getCharacters: buffer range: NSMakeRange(0, length)];
 	regex = uregex_open(buffer, length, flags, &pe, &s);
@@ -190,7 +196,7 @@ NSRegularExpressionOptionsToURegexpFlags(NSRegularExpressionOptions opts)
 	}
 	return [NSString stringWithCharacters: pattern length: length];
 }
-#endif
+#endif // HAVE_UREGEX_OPENUTEXT
 
 static UBool
 callback(const void *context, int32_t steps)
@@ -283,7 +289,7 @@ setupRegex(URegularExpression *regex,
 	}
 	return r;
 }
-#endif
+#endif //HAVE_UREGEX_OPENUTEXT
 
 static uint32_t
 prepareResult(NSRegularExpression *regex,
@@ -431,7 +437,7 @@ prepareResult(NSRegularExpression *regex,
 	}
 	uregex_close(r);
 }
-#endif
+#endif //HAVE_UREGEX_OPENUTEXT
 
 /* The remaining methods are all meant to be wrappers around the primitive
  * method that takes a block argument.  Unfortunately, this is not really
@@ -525,7 +531,8 @@ prepareResult(NSRegularExpression *regex,
 	return r;
 }
 
-#else
+#else // no block support
+
 #  ifdef __clang__
 #    warning Your compiler does not support blocks.  NSRegularExpression will deviate from the documented behaviour when subclassing and any code that subclasses NSRegularExpression may break in unexpected ways.  If you must subclass NSRegularExpression, you may want to use a compiler with blocks support.
 #    warning Your compiler would support blocks if you added -fblocks to your OBJCFLAGS
@@ -649,7 +656,7 @@ prepareResult(NSRegularExpression *regex,
 	return result;
 }
 
-#endif
+#endif //__has_feature(blocks)
 
 #if HAVE_UREGEX_OPENUTEXT
 - (NSUInteger) replaceMatchesInString: (NSMutableString*)string
@@ -833,7 +840,7 @@ prepareResult(NSRegularExpression *regex,
 												length: outLength
 										    freeWhenDone: YES]);
 }
-#endif
+#endif //HAVE_UREGEX_OPENUTEXT
 
 - (NSRegularExpressionOptions) options
 {
@@ -908,12 +915,15 @@ prepareResult(NSRegularExpression *regex,
 @synthesize options;
 @end
 
+#endif //NSRegularExpressionWorks
+
 
 #ifndef NSRegularExpressionWorks
 #	import "Foundation/NSRegularExpression.h"
 #	import "Foundation/NSZone.h"
 #	import "Foundation/NSException.h"
 
+#pragma mark --- stub implementation ---
 @implementation NSRegularExpression
 + (id)allocWithZone: (NSZone*)aZone
 {
@@ -933,4 +943,4 @@ prepareResult(NSRegularExpression *regex,
 	return nil;
 }
 @end
-#endif
+#endif //!NSRegularExpressionWorks
