@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		D64DCBED1D92EAC8003EDA4D /* NSMissingSymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = D64DCBEB1D92EAC8003EDA4D /* NSMissingSymbols.h */; };
+		D64DCBEE1D92EAC8003EDA4D /* NSMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DCBEC1D92EAC8003EDA4D /* NSMissingSymbols.m */; };
+		D64DCBEF1D92EAC8003EDA4D /* NSMissingSymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = D64DCBEB1D92EAC8003EDA4D /* NSMissingSymbols.h */; };
+		D64DCBF01D92EAC8003EDA4D /* NSMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DCBEC1D92EAC8003EDA4D /* NSMissingSymbols.m */; };
 		D65524A716C9A81400E5C932 /* NSRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D65524A516C9A81400E5C932 /* NSRegularExpression.m */; };
 		D65524A816C9A81400E5C932 /* NSRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A616C9A81400E5C932 /* NSRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D65524AC16C9A82400E5C932 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = D65524A916C9A82400E5C932 /* common.h */; settings = {ATTRIBUTES = (); }; };
@@ -94,6 +98,8 @@
 		089C1667FE841158C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* UglySnowLing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UglySnowLing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64DCBEB1D92EAC8003EDA4D /* NSMissingSymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMissingSymbols.h; sourceTree = "<group>"; };
+		D64DCBEC1D92EAC8003EDA4D /* NSMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMissingSymbols.m; sourceTree = "<group>"; };
 		D65524A516C9A81400E5C932 /* NSRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRegularExpression.m; sourceTree = "<group>"; };
 		D65524A616C9A81400E5C932 /* NSRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRegularExpression.h; sourceTree = "<group>"; };
 		D65524A916C9A82400E5C932 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D64DCBEB1D92EAC8003EDA4D /* NSMissingSymbols.h */,
+				D64DCBEC1D92EAC8003EDA4D /* NSMissingSymbols.m */,
 				D655262816C9BC2700E5C932 /* NSTextCheckingResult.h */,
 				D65524DB16C9AB4500E5C932 /* NSTextCheckingResult.m */,
 				D65524A616C9A81400E5C932 /* NSRegularExpression.h */,
@@ -250,6 +258,7 @@
 				D65524AE16C9A82400E5C932 /* GSBlocks.h in Headers */,
 				D65524C116C9AA0400E5C932 /* GSICUString.h in Headers */,
 				D655262916C9BC2700E5C932 /* NSTextCheckingResult.h in Headers */,
+				D64DCBEF1D92EAC8003EDA4D /* NSMissingSymbols.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 				D659DF4416CA986C00B9A61B /* GSBlocks.h in Headers */,
 				D659DF4516CA986C00B9A61B /* GSICUString.h in Headers */,
 				D659DF4616CA986C00B9A61B /* NSTextCheckingResult.h in Headers */,
+				D64DCBED1D92EAC8003EDA4D /* NSMissingSymbols.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +398,7 @@
 				D65524A716C9A81400E5C932 /* NSRegularExpression.m in Sources */,
 				D65524C016C9AA0400E5C932 /* GSICUString.m in Sources */,
 				D655262A16C9BC8600E5C932 /* NSTextCheckingResult.m in Sources */,
+				D64DCBF01D92EAC8003EDA4D /* NSMissingSymbols.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +417,7 @@
 				D659DF4A16CA986C00B9A61B /* NSRegularExpression.m in Sources */,
 				D659DF4B16CA986C00B9A61B /* GSICUString.m in Sources */,
 				D659DF4C16CA986C00B9A61B /* NSTextCheckingResult.m in Sources */,
+				D64DCBEE1D92EAC8003EDA4D /* NSMissingSymbols.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,9 @@ also be used to provide missing functions/symbols to existing applications, usin
 See:
 http://tlrobinson.net/blog/2007/12/overriding-library-functions-in-mac-os-x-the-easy-way-dyld_insert_libraries/
 
+NB: Requires port:icu from MacPorts, expected to be installed in /opt/local, for building AND for runtime use.
+Evidently this must be a version built for OS X 10.6!
+
 Used by my backport of the NSLogger facility:
 http://bitbucket.org/RJVB/nslogger
 
